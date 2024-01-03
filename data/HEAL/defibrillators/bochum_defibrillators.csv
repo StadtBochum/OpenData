@@ -1,0 +1,132 @@
+OBJECTID;ADRESSE;LAGE;GEBAEUDE;XCenter_EPSG25832;YCenter_EPSG25832
+1;Uhlandstr. 30;Eingangsbereich rechts;AOK;376362;5705577
+2;Universitätsstr. 43;Eingangsbereich BKK;BKK Aktiv;376703;5704241
+3;Kortumstr. 89;5. OG Centermangement;City Point Einkaufszentrum;376173;5704971
+4;Universitätsstr. 78;Eingangsbereich links;Berufsgenossenschaft für Gesundheit und Wohlfahrtspflege;376827;5703378
+5;Herner Str. 45;Eingansbereich der DMT RAG;DMT RAG;375969;5705618
+6;Am Bergbaumuseum 28;Erdgeschoss Bergbaumuseum;Bergbaumuseum;376216;5705713
+7;Am Bergbaumuseum 28;Unterirdisch Bergbaumuseum;Bergbaumuseum;376194;5705679
+8;Dr.-C.-Otto-Str. 222;Herdwagenofenhalle;Feuerfest GmbH;370171;5699695
+9;Dr.-C.-Otto-Str. 222;Schamottabteilung;Feuerfest GmbH;369933;5699688
+10;Am Eickhoffpark 1;Pförtner;Firma Eickhoff;376289;5702395
+11;Am Eickhoffpark 1;Mechanische Werkstatt;Firma Eickhoff;376298;5702277
+12;Am Eickhoffpark 1;Gießerei;Firma Eickhoff;376146;5702216
+13;Arndtstr. 26;2. OG;Haftpflichtg. Nahverkehr Versorgungsunternehmen;376652;5704898
+14;Blumenfeldstr. 18;Produktionshalle;Klaus Union;374040;5701710
+15;Freiheitstr. 8;Praxis Dr.Gerritzen;Freiheitstr 8;370482;5705036
+16;Vierhausstr. 53;Halle;Reich Kupplungen;376275;5706939
+17;Vierhausstr. 53;Halle;Reich Kupplungen;376240;5706940
+18;Vierhausstr.;Verwaltung;Reich Kupplungen;376336;5706858
+19;Vierhausstr.;Halle;Reich Kupplungen;376306;5706806
+20;Dr.-Ruer-Platz 5;Info Point am Haupteingang;Sparkasse Bochum;376354;5704775
+21;Junggesellenstr. 8;2. OG;Staatsanwaltschaft;376044;5704811
+22;Viktoriastr. 14;4. OG;Landgericht;376083;5704767
+23;Viktoriastr. 14;7. OG;Landgericht;376088;5704745
+24;Viktoriastr. 14;9. OG;Landgericht;376084;5704724
+25;Viktoriastr. 14;12. OG;Landgericht;376058;5704740
+26;Carl-von-Ossietzky-Platz 1;Bürgerbüro im EG;Altes Amtsgericht;382947;5703431
+27;Eschweg 50;Schwimmmeisterraum innen / aussen;Hallenfreibad Langendreer;382907;5702895
+28;Heinrichstr. 42;Bürgerbüro Zimmer 2;Amt Gerthe;380517;5708602
+29;Hattinger Str. 387;Erdgeschoss letztes Büro rechts;Bürgerbüro Stadt Bochum;374476;5701535
+30;Hattinger Str. 389;1. OG Sozialamt;Bürgerbüro Stadt Bochum;374469;5701509
+31;Bulksmühle 17;Information Straßenverkehrsamt;Straßenverkehrsamt;375611;5707035
+32;Darpestr. 22;Pförtnerhaus;Stadtwerke Bochum;373908;5705832
+33;Ostring 28;Empfang im EG;Stadtwerke Bochum;376713;5704884
+34;Katharinastr.;Eingang B;Stadtwerke Bochum;375847;5704419
+35;Steiger-Stein-Str.;Leitstand des Kraftwerkes;Stadtwerke Bochum;378591;5707776
+36;Bußmanns Weg 8;1. OG Saniraum;Sporthalle SV Höntrop;370975;5704411
+37;Erbstollen 14;UG im Flur;Tennisclub Weitmar;375808;5700054
+38;Hanielstr. 1;Empfang;USB Hanielstraße;378920;5702498
+39;Brelohstr. 70;Vorarbeiterraum;USB Wertstoffhof;379516;5704835
+40;Wirmerstr. 28;1. OG Service;VBW Wohnen;378137;5704389
+41;Markstr. 406;1. OG Zahnarzt Praxis;Markstr. 406;375867;5700444
+42;Brenscheder Str. 49;1. OG Zahnarztpraxis;Brenschederstr 49;377158;5701588
+43;Alsenstr. 19;links neben Cafeteria;Haus der Begegnung;377070;5704246
+44;Castroper Str. 145;VIP Bereich;Vfl Bochum Verwaltungsgebäude;377563;5705881
+45;Castroper Str. 145;Verwaltung UG Physio;Vfl Bochum;377525;5705862
+46;Hans-Schalla-Platz;UG Pforte oder Saal;Schauspielhaus;376199;5703843
+47;Hans-Schalla-Platz;UG Pforte oder Saal;Schauspielhaus;376203;5703814
+48;Hüttenstr. 40;Fordhalle;Johnson Controls;374931;5703426
+49;Hüttenstr. 42;Verwaltung in der Küche;Johnson Controls;374810;5703472
+50;Brannenweg 10;Schwimmeisterraum innen od. außen;Hallenfreibad Linden;372169;5699145
+51;Am Südpark 1;Schwimmeisterraum innen od. außen;Hallenfreibad Höntrop;371825;5701668
+52;Märkische Str. 13;Schwimmeisterraum innen od. außen;Hallenfreibad Südfeldmark;371673;5705501
+53;Lohrheidestr. 82;Eingangsbereich der Verwltung;Lorheidestadion;369389;5705403
+54;Hustadtring 157;Schwimmeisterraum im Bad;Hallenbad Querenburg;378763;5701117
+55;Stettiner Str. 1;Kassenbereich;Hallenfreibad Hofstede;374007;5706909
+56;Bramheide 17;Schwimmmeisterraum am Schwimmerbecken;Freibad  Werne;383021;5705849
+57;Hollandstr. 95;vor dem Hausmeisterraum der Sporthalle;Olympia Stützpunkt;369483;5705661
+58;Westring 14;keine Information;Landgericht;376023;5704719
+59;Harpener Hellweg 31;Erste Hilfe Raum in der Produktion;Firma Bizerba;379467;5706658
+60;Overbergstr. 19;Ergometrielabor im Keller;Overbergstr. 19;379440;5701445
+61;Hauptstr. 63;Sanitätsstation;Firma Adam Opel AG;384207;5704964
+62;Rombacher Hütte 12 a;1 OG im Flur;USB;374535;5703142
+63;Harpener Heide 5;Hallenwartraum rechter Gebäudeteil;Sporthalle der Stadt Bochum;378670;5706826
+64;Lohackerstr. 7 a;1 OG Hallenwartraum am Schwimmbecken;Sporthalle Lohackerstr;371257;5703871
+65;Martin-Lang-Str. 2;Hausmeisterraum;Sporthalle Günnigfeld;371287;5706273
+66;Berliner Str. 41;Hallenwartraum;Sporthalle Berlinerstr;369952;5704562
+67;Stadtionring;Regieraum in der Halle;Rundsporthalle;377462;5705850
+68;Willy-Brandt-Platz 2;rechter Haupteingang EG rechts;Rathaus Bochum;376073;5704993
+69;Willy-Brandt-Platz 2;linkes Büro vor Großraumbüro;Rathaus Bochum;376042;5704987
+70;Oveneystr.;mobiles Gerät;DLRG;379192;5698407
+71;Gudrunstr. 56;interner Alarmplan (14 Geräte );St.-Josef Krankenhaus;377063;5706154
+72;Bleichstr. 15;interner Alarmplan (6 Geräte );St. Elisabeth Krankenhaus;376516;5704998
+73;Hiltroper Landwehr 11;interner Alarmplan;St. Maria-Hilf-Krankenhaus;380138;5709070
+74;Viktoriastr. 10;keine Information;Bochumer Veranstaltungs-GmbH;376094;5704816
+75;Gesundheitscampus-Nord;KLSR 0;Sporthalle;378020;5701188
+76;Stiepeler Str. 69 c;Eingang;Clubhaus;377813;5701488
+77;An der Jahrhunderthalle 1;Pforte;Jahrhunderthalle;374875;5704885
+78;Werner Hellweg 566;Clubhaus nicht ständig besetzt;Werner Hellweg 566;383308;5706054
+79;Wirmerstr. 10;Clubhaus nicht ständig besetzt;Wirmerstr. 10;378266;5704284
+80;Universitätsstr. 150;Infopunkt HZO 02 Nord;HZO - Ruhr-Universität Bochum;379119;5700740
+81;Universitätsstr. 150;Infopunkt 04 Nord;NC - Ruhr-Universität Bochum;379462;5700730
+82;Universitätsstr. 150;Infopunkt 05 Süd;GB - Ruhr-Universität Bochum;378994;5700436
+83;Universitätsstr. 150;UB 0 Ausleihe;Bibliothek - Ruhr-Universität Bochum;379196;5700763
+84;Universitätsstr. 150;Eingang west 04;Veranstaltungszentrum - Ruhr-Universität Bochum;379250;5700486
+85;Universitätsstr. 150;Foyer Haupttreppe unten;Audi Max - Ruhr-Universität Bochum;379179;5700638
+86;Universitätsstr. 150;Infopunkt 01 Nord;MA - Ruhr-Universität Bochum;378978;5700785
+87;Universitätsstr. 150;Versuchshalle ICN 03 3364;ICN - Ruhr-Universität Bochum;379523;5700881
+88;Universitätsstr. 150;Kaffeebar Ebene 0;Ruhr-Universität Bochum - Mensa;379219;5700548
+89;Clemensstr. 17;Ausleihe Erdgeschoss;Haus der Geschichte des Ruhrgebiets (HGR);376166;5704058
+90;Hasenwinkeler Str. 204;Praxis EKG Raum;Praxis Hasenwinkler Str. 204;372028;5700449
+91;Universitätsstr. 150;Rezeption;ID  Ebene04 Süd Ruhr-Universität Bochum;379552;5700954
+92;Riemker Str. 13;Marktmanager Büro;Pro Markt - Hannibal Einkaufszentrum;374674;5707621
+93;Riemker Str. 13;keine Information;Modbau Uhle KG;374456;5707722
+94;Riemker Str. 13;Westfalenapotheke;Hannibal Einkaufszentrum - Realmarkt;374601;5707846
+95;Karl-Friedrich-Str. 123;Dr.Sczesni Anmeldung;Karl-Friedrich Str.123;375703;5700354
+96;Immanuel-Kant-Str. 20;Foyer;Evangelische Fachhochschule;378664;5703951
+97;Harpener Hellweg 1;keine Information;Strassen NRW;378867;5706219
+98;Westenfelder Str. 88;vor dem Sekreteriat;Klaus Steinmann BK;371130;5704412
+99;Querenburger Str. 45;Lehrerzimmer;Neues Gymnasium;377100;5703323
+100;Dr.-Ruer-Platz;EGR Parkhaus P2 - Eingangsbereich;Parkhaus P2 Entwicklungsgesellschaft Ruhr-Bochum mbH;376319;5704721
+101;Konrad-Adenauer-Platz;EGR Parkhaus P8 - Eingangsbereich;Parkhaus P8 Entwicklungsgesellschaft Ruhr-Bochum mbH;376137;5704257
+102;Heinrichstr. 44;Eingangsbereich;Turnhalle Stadt Bochum;380664;5708581
+103;Glücksburger Str. 25;Eingangsbereich;Turnhalle Stadt Bochum;377315;5701266
+104;Westhoffstr. 17;Eingangsbereich;Stadt Bochum;375829;5705757
+105;Dorstener Str. 400;Verwaltung;Hanibal Einkaufszentrum;374602;5707731
+106;Hans-Böckler-Str. 19;Eingangsbereich;Technisches Rathaus - Stadt Bochum;376084;5705135
+107;Hans-Böckler-Str. 19;3. Etage;Technisches Rathaus - Stadt Bochum;376088;5705173
+108;Castroper Str. 67;Kassenbereich;Planetarium;376950;5705299
+109;Stadionring 24;Kassenbereich;Starlight Express Halle;377391;5706083
+110;Saladin-Schmidtstr. 5;Telefonzentrale;Bochumer Wohnstätten;376234;5703884
+111;Wittenerstr. 227;Kassenbereich;Ruhr-Apotheke;378206;5703778
+112;Universitätsstr. 44-46;Serviceannahme;Fahrzeug-Werk LUEG;376661;5704210
+113;Berlinerstr. 80-86;Haupteingang;Fahrzeug-Werk LUEG Wattenscheid;370157;5703545
+114;Köllerholzweg 61;Sekretariat;Köllerhozschule;372382;5700179
+115;Ottostr. 42;Eingangsbereich;Real-Markt;369324;5703979
+116;Akademiestr. 46; ;Alice Salomon BK;377379;5704584
+117;Fahrendeller Str. 25; ;Alice Salomon BK;375669;5705515
+118;An der Holtbrügge 2;Erdgeschoss;DRK Zentrum Weitmar;375063;5701887
+120;Markstr. 189; ;Erich Kästner Gesamtschule;378127;5701446
+121;Bongardstr. 42;vierte OG Servicekasse;Fa. Baltz;376361;5704846
+122;Westring;2. OG;Gesundheitsamt;375881;5705026
+124;Ostring 25; ;Techn. Beruf. Schule;376755;5704773
+125;Ostring 27;Sekretariat;Walter Gropius KB;376732;5704700
+126;Waldring 71; ;Schiller Schule;376437;5702898
+128;Goethestr. 1; ;Goethe Schule;376403;5705446
+129;Königsallee 77;Sekretariat;Graf Engelbert Schule;376350;5703168
+130;Universitätsstr. 150;Rezeption;ID  Ebene04 Süd Ruhr-Universität Bochum;379552;5700954
+131;Agnesstr. 33; ;Heinrich Böll Gesamtschule;376383;5706505
+132;Harpener Feld 35; ;OASE GmbH;378832;5707161
+133;Ruhrpark;Via Bartolo am Toilettenabgang; ;370544;5706288
+134;Ruhrpark;Ruhrpark Info unter dem Zeltdach; ;370806;5706280
