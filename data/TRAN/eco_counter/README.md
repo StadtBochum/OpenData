@@ -1,1 +1,1 @@
-# Zählstellen für Personen und Fahrräder
+# Zählstellen für Personen und Radfahrende
