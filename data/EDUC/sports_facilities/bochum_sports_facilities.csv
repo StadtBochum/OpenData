@@ -1,0 +1,174 @@
+Art;Bezeichnung;Adresse;Bezirk;Spielfeld;Belag;Maﬂe;"Beleuchtung
+ vorhanden";LA-Anlagen;
+;;;;;;;;;
+Sportplatzanlage;"Am Hausacker
+";Am Hausacker 43 a;1;Groﬂspielfeld;Hartplatz;64,2 x 104,6;ja;WS;WS = Weitsprung
+Sportplatzanlage;Am Hessenteich;Am Hessenteich 9;4;Groﬂspielfeld;Hartplatz;66,5 x 105,2;ja;-;RL = Rundlaufbahn
+;;;4;Groﬂspielfeld;Rasenplatz ;67,8 x 105,0;nein;RL, KS, WS;KS=Kugelstoﬂen
+;;;4;Kleinspielfeld;Rasenplatz;65,0 x 115,0;nein;-;
+Sportplatzanlage;Am Hillerberg;Am Hillerberg 5-7;3;Groﬂspielfeld;Rasenplatz;71,0 x 105,4;nein;-;
+;;;3;Kleinspielfeld;Hartplatz;20,0 x 90,0;nein;-;
+Sportplatzanlage;Am Nordbad;Am Nordbad 46 a;3;Groﬂspielfeld;Hartplatz;61,9 x 91,0;ja;-;
+;;;3;Groﬂspielfeld;Rasenplatz;68,1 x 105,2;nein;RL, KS, WS;
+Sportplatzanlage;Am Pappelbusch;Am Pappelbusch 36;1;Groﬂspielfeld;Kunstrasenplatz;65,9 x 104,9;ja;KS, WS;
+Sportplatzanlage;An der Landwehr;An der Landwehr 72;6;Groﬂspielfeld;Hartplatz;70,4 x 105,1;ja;KS, WS;
+Sportplatzanlage;Anemonenweg;Anemonenweg 9;4;Groﬂspielfeld;Hartplatz;68,3 x 105,1;ja;-;
+;;;4;Groﬂspielfeld;Rasenplatz;68,6 x 105;nein;KS;
+Sportplatzanlage;Auf der Heide;Auf der Heide 32;1;Groﬂspielfeld;Hartplatz;66,4 x 100,2;ja;-;
+;;;1;Groﬂspielfeld;Rasenplatz;68,1 x 105,4;nein;RL, KS, WS;
+Sportplatzanlage;Berliner Straﬂe (Sportzentrum);Berliner Straﬂe 40;2;Groﬂspielfeld;Hartplatz;70,7 x 105,3;ja;RL, KS;
+;;;2;Groﬂspielfeld;Kunstrasenplatz;68,0 x 105,0;ja;KS, WS;
+Sportplatzanlage;"Brelohstraﬂe
+";Brelohstraﬂe 12;1;Groﬂspielfeld;Hartplatz;69,2 x 105,0;ja;-;
+Sportplatzanlage;Dickebankstraﬂe;Dickebankstraﬂe 27;2;Groﬂspielfeld;Hartplatz;60,6 x 89,6;ja;-;
+;;;2;Groﬂspielfeld;Rasenplatz;69,2 x 100,15;nein;RL, KS, WS;
+;;;2;Kleinspielfeld;Rasenplatz;-;nein;-;
+Sportplatzanlage;Eifelstraﬂe;Eifelstraﬂe 21;3;Groﬂspielfeld;Kunstrasenplatz;65,9 x 104,9;ja;-;
+;;;3;Kleinspielfeld;Rasenplatz;49,5 x 79,9;nein;;
+Sportplatzanlage;Engelsburger Straﬂe;Engelsburger Straﬂe 61;2;Groﬂspielfeld;Kunstrasenplatz;61,9 x 93,9;ja;-;
+Sportplatzanlage;Erbstollen/Roomersh.;Erbstollen 12;6;Groﬂspielfeld;Hartplatz;70,6 x 105,4;ja;-;
+;;;6;Groﬂspielfeld;Rasenplatz;67,7 x 105,0;nein;RL, KS, WS;
+Sportplatzanlage;Everstalstraﬂe;Everstalstraﬂe 91;4;Groﬂspielfeld;Hartplatz;62,2 x 96,0;ja;-;
+;;;4;Groﬂspielfeld;Rasenplatz;69,8 x 102,1;nein;RL, KS, WS;
+Sportplatzanlage;Feenstraﬂe;Feenstraﬂe 7;1;Groﬂspielfeld;Kunstrasenplatz;66,0 x 105,2;ja;-;
+;;;1;Groﬂspielfeld;Rasenplatz;67,9 x 105,3;nein;RL, KS, WS;
+Sportplatzanlage;Freigrafendamm;Freigrafendamm 14;1;Groﬂspielfeld;Hartplatz;64,0 x 95,0;ja;-;
+Sportplatzanlage;Gahlensche Straﬂe;Gahlensche Straﬂe 111;1;Groﬂspielfeld;Hartplatz;58,0 x 103,0;ja;-;
+;;;1;Groﬂspielfeld;Rasenplatz;69,0 x 104,0;nein;KS, WS;
+Sportplatzanlage;Gemeindestraﬂe;Gemeindestraﬂe 19;1;Groﬂspielfeld;Hartplatz;66,2 x 100,2;ja;-;
+;;;1;Groﬂspielfeld;Rasenplatz;68,2 x 105,1;nein;RL, KS, WS;
+Sportplatzanlage;Gl¸cksburger Straﬂe;Gl¸cksburger Straﬂe 25;5;Groﬂspielfeld;Kunstrasenplatz;68,0 x 104,0;ja;RL, KS, WS;
+;;;5;Kleinspielfeld;Hartplatz;57,4 x 87,4;nein;-;
+Sportplatzanlage;G¸nnigfeld;Martin-Lang-Str. 2;2;Groﬂspielfeld;Hartplatz;63,2 x 98;ja;-;
+;;;2;Groﬂspielfeld;Rasenplatz;66,0 x 105,2;nein;WS;
+Sportplatzanlage;Hasenkampstraﬂe;Hasenkampstraﬂe 9 a;6;Groﬂspielfeld;Kunstrasenplatz;64,0 x 100,0;ja;-;
+Sportplatzanlage;Hasenwinkeler Str.;Hasenwinkeler Straﬂe 75;6;Groﬂspielfeld;Hartplatz;58,7 x 101,6;ja;-;
+;;;6;Groﬂspielfeld;Rasenplatz;68,0 x 104,9;nein;RL, KS, WS;
+;;;6;Kleinspielfeld;Hartplatz;32,0 x 62,5;nein;-;
+Sportplatzanlage;Havkenscheider Straﬂe;Havkenscheider Straﬂe 31;4;Groﬂspielfeld;Hartplatz;55,6 x 95,7;ja;-;
+;;;4;Groﬂspielfeld;Rasenplatz;68,4 x 105,6;nein;RL, KS, WS;
+Sportplatzanlage;Heinrich-Gustav-Str.;Heinrich-Gustav-Straﬂe 134;4;Groﬂspielfeld;Hartplatz;66,0 x 100,0;ja;RL, KS, WS;
+;;;4;Groﬂspielfeld;Rasenplatz;65,8 x 105,0;nein;-;
+Sportplatzanlage;Heinrichstraﬂe;Heinrichstraﬂe 44-48;3;Groﬂspielfeld;Kunstrasenplatz;64,0 x 100,0;ja;RL, KS, WS
+;;;3;Groﬂspielfeld;Rasenplatz;62,0 x 102,0;nein;-
+Sportplatzanlage;Hiltroper Straﬂe (VfL);Hiltroper Straﬂe 240;1;Groﬂspielfeld;Rasenplatz;67,9 x 103,9;ja;-
+;;;1;Groﬂspielfeld;Kunstrasenplatz;67,9 x 105,0;ja;-
+;;;1;Groﬂspielfeld;Rasenplatz;67,9 x 103,9;nein;-
+;;;1;Groﬂspielfeld;Rasenplatz;nicht ausgem.;nein;-
+;;;1;Groﬂspielfeld;Rasenplatz;nicht ausgem.;nein;-
+Sportplatzanlage;Hˆntroper Straﬂe;Hˆntroper Straﬂe 99;2;Groﬂspielfeld;Hartplatz;67,9 x 104,8;ja;RL, KS, WS
+Sportplatzanlage;Hˆrder Straﬂe;Hˆrder Straﬂe 135;4;Groﬂspielfeld;Hartplatz;60,3 x 90,0;ja;WS
+;;;4;Groﬂspielfeld;Rasenplatz;64,0 x 100,0;nein;-
+Sportplatzanlage;Hofsteder Straﬂe;Hofsteder Straﬂe 99;1;Groﬂspielfeld;Kunstrasenplatz;62,0 x 96,0;ja;WS
+;;;1;Kleinspielfeld;Kunststoff;22,5 x 42,5;nein;-
+Sportplatzanlage;Hordeler Heide;Hordeler Heide 189;1;Groﬂspielfeld;Kunstrasenplatz;59,9 x 89,9;ja;-
+;;;1;Groﬂspielfeld;Kunstrasenplatz;64,1 x 100,1;ja;-
+Sportplatzanlage;Hustadtring;Hustadtring 146;5;Groﬂspielfeld;Hartplatz;66,9 x 104,9;ja;RL, KS
+;;;5;Kleinspielfeld;Hartplatz;nicht ausgem.;nein;-
+Sportplatzanlage;Kemnader Straﬂe;Kemnader Straﬂe 222;5;Groﬂspielfeld;Kunstrasenplatz;64,0 x 96,0;ja;-
+;;;5;Groﬂspielfeld;Rasenplatz;63,0 x 99,9;nein;RL, KS, WS
+Sportplatzanlage;Kr¸mmede;Gersteinring 1;1;Groﬂspielfeld;Kunstrasenplatz;64,0 x 100,0;ja;KS
+Sportplatzanlage;Lewackerstraﬂe;Lewackerstraﬂe 4;6;Groﬂspielfeld;Hartplatz;62,8 x 100,2;ja;-
+;;;6;Groﬂspielfeld;Rasenplatz;70,2 x 108;nein;KS
+Stadion;"Lohrheidestadion
+(Sportzentrum)";Lohrheidestraﬂe 80-82;2;Groﬂspielfeld;Rasenplatz ;70,0 x 105,0;;RL, KS, WS
+;(Sportzentrum);;2;Groﬂspielfeld;Rasenplatz;68,0 x 105,1;;KS, WS
+;;;2;Groﬂspielfeld;Hartplatz;69,2 x 105,3;;-
+;;;2;Groﬂspielfeld;Hartplatz ;69,5 x 105,1;ja;-
+;;;2;Kleinspielfeld;Rasenplatz;nicht meﬂbar;ja;-
+Sportplatzanlage;Lohring;Lohring 22;1;Groﬂspielfeld;Hartplatz;68,3 x 105,0;ja;RL, KS, WS
+Sportplatzanlage;Markstraﬂe;Marktstraﬂe;5;Groﬂspielfeld;Hartplatz;68,0 x 95,3;ja;-
+;;;5;Groﬂspielfeld;Rasenplatz ;68,2 x 105,5;nein;RL, KS, WS
+Sportplatzanlage;Nˆrenbergstraﬂe;Nˆrenbergstraﬂe 140;4;Groﬂspielfeld;Hartplatz;64,4 x 103,6;ja;-
+Sportplatzanlage;Pestalozzistraﬂe;Pestalozzistraﬂe 25;1;Groﬂspielfeld;Rasenplatz;64,7 x 105,7;ja;-
+Sportplatzanlage;Preins Feld;Preins Feld 3 a;2;Groﬂspielfeld;Kunstrasenplatz;63,9 x 100,0;ja;RL, KS, WS
+;Querenburger Straﬂe;Querenburger Straﬂe 35-37;1;Groﬂspielfeld;Rasenplatz;70,0 x 105,1;ja;RL, KS, WS
+Sportplatzanlage;;;1;Kleinspielfeld;Hartplatz;31,0 x 55,0;nein;-
+Stadion;"RewirpowerStadion
+";Castroper Str 145;1;Groﬂspielfeld;Rasenplatz ;68,0 x 105,0;;-
+;(Sportzentrum);;1;Groﬂspielfeld;Kunstrasenplatz;68,0 x 105,0;;-
+;;;1;Groﬂspielfeld;Rasenplatz;65,9 x 100,9;;-
+;;;1;Groﬂspielfeld;Rasenplatz;68,1 x 105,1;;RL, KS, WS
+;;;1;Groﬂspielfeld;Rasenplatz ;58,1 x 86,3;;-
+Sportplatzanlage;Ruhrstraﬂe ;Ruhrstraﬂe 150;2;Groﬂspielfeld;Kunstrasenplatz;67,9 x 101,9;ja;KS, WS
+Sportplatzanlage;Stadtgartenring;Stadtgartenring 9;2;Groﬂspielfeld;Kunstrasenplatz;100,0 x 64,0;ja;KS, WS
+Sportplatzanlage;Steffenhorst;Steffenhorst 1 a;3;Groﬂspielfeld;Hartplatz;63,1 x 103,1;ja;RL, KS, WS
+Sportplatzanlage;‹mminger See;‹mminger See 11;4;Groﬂspielfeld;Hartplatz;68,2 x 104,9;ja;-
+;;;4;Groﬂspielfeld;Rasenplatz;68,0 x 105,1;nein;-
+Sportplatzanlage;Unterstraﬂe;Unterstraﬂe 98;4;Groﬂspielfeld;Rasenplatz;70,1 x 101,1;nein;-
+Sportplatzanlage;Urbanusstraﬂe;Urbanusstraﬂe 55;4;Groﬂspielfeld;Kunstrasenplatz;99,9 x 63,9;ja;-
+Sportplatzanlage;Volkspark Langendreer;Hohe Eiche 42;4;Groﬂspielfeld;Kunstrasenplatz;64,0 x 100,0;ja;KS, WS
+Sportplatzanlage;Waldesrand;Heidelbeerweg 8;6;Groﬂspielfeld;Hartplatz;59,9 x 89,0;ja;-
+;;;6;Groﬂspielfeld;Rasenplatz;64,7 x 99,8;nein;-
+Sportplatzanlage;WAT Hellweg/AdEsch;Wattenscheider Hellweg 138;2;Groﬂspielfeld;Hartplatz;66,1 x 105,2;ja;-
+;;;2;Groﬂspielfeld;Rasenplatz ;nicht meﬂbar;nein;-
+Sportplatzanlage;Westenfeld;Lohacker Straﬂe 7 d;2;Groﬂspielfeld;Hartplatz;68,9 x 104,9;ja;RL, KS, WS
+Sportplatzanlage;Westerholtstraﬂe/Hustadt;Hustadtring 5;5;Groﬂspielfeld;Rasenplatz ;68,0 x 104,9;nein;RL, KS, WS
+Sportplatzanlage;Wielandstraﬂe;Wielandstraﬂe 120;1;Groﬂspielfeld;Kunstrasenplatz;64,0 x 110,0;ja;RL, KS, WS
+Sportplatzanlage;Wohlfahrtstraﬂe;Wohlfahrtstraﬂe 15;5;Groﬂspielfeld;Rasenplatz;69,0 x 110,0;nein;-
+;;;5;Kleinspielfeld;Hartplatz;35,0 x 70,0;nein;-
+Sportplatzanlage;Zum Schultenhof;Zum Schultenhof 101 a;3;Groﬂspielfeld;Rasenplatz;53,3 x 103,9;;
+Sportplatzanlage;Zur Burkuhle;Zur Burkuhle 86;3;Groﬂspielfeld;Hartplatz;67,1 x 105,2;ja;-
+;;;3;Groﬂspielfeld;Rasenplatz;68,1 x 105,3;nein;RL, KS, WS
+Sporthalle;Gl¸cksburger Straﬂe;Gl¸cksburger Straﬂe 25;5;1-fach Turnhalle;;12,5 x 25,00;;
+Sporthalle;Lohrheide;Lohrheidestraﬂe 80-82;2;1-fach Turnhalle;;18,00 x 33,00;;
+Sporthalle ;Heinrich Straﬂe;Heinrich Straﬂe 44-48;3;1-fach Turnhalle;;12,00 x 27,00 ;;
+Sporthalle;Pestalozzistr.;Pestalozzistraﬂe 25;1;1-fach Turnhalle;;12,50 x 25,00;;
+Sporthalle;Rundsporthalle;Stadionring 18;1;3-fach Sorthalle;;27,00 x 48,00;;
+;;;;Rundlaufbahn;;L‰nge 166,6;;
+;;;;Kraftsportfl‰che;;8,00 x 24,00;;
+;;;;Mehrzweckfl‰che;;8,00 x 24,00;;
+Sporthalle;G¸nnigfeld;Martin-Lang-Str. 2;2;2-fachTurnhalle;;21,00 x 45,00;;
+Sportzentrum;Westenfeld;Lohacker Str. 7d;2;3-fach Sporthalle;;27,00 x 45,00;;
+;;;;Lehrschwimmbecken;;25,00 x 10,00;;
+;;;;Halle f. rythm. Sportgymnastik;;27,00 x 15,00;;
+Sportzentrum ;Berliner Straﬂe;Berliner Str. 40;2;3-fach Sporthalle;;27,00 x 45,00;;
+;;;;Lehrschwimmbecken;;;;
+Sportzentrum;st‰dt. Sporthallen Harpener Heide;Harpener Heide 1;3;Turnzentrum;;33,5 x 32,00;;
+;;;;Kampfsportfl‰che;;14,00 x 26,00;;
+;;;;Kraftsportfl‰che 1;;612 m≤;;
+;;;;Kraftsportfl‰che 2;;458 m≤;;
+;;;;Rollsportfl‰che;;80,00 x 30,00;;
+Sportzentrum;Olympiast¸tzpunkt;Hollandstraﬂe 95;2;Leichtathletik-Halle;;keine Angabe;;
+;;;;Halle f. rythm. Sportgymnastik;;keine Angabe;;
+;;;;Ballettsaal;;keine Angabe;;
+;;;;Kraftsportfl‰che;;keine Angabe;;
+
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
