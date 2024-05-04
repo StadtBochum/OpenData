@@ -33,6 +33,6 @@ jobs:
         run: |
           git config --global user.email "philipp.zuber@posteo.de"
           git config --global user.name "zuberspace"
-          git add data/ENVI/ecowitt_gw2001/*.csv
+          git add --ALL data/ENVI/ecowitt_gw2001/
           git commit -m "Update EcoWitt GW2001 Station weather data csv"
           git push
