@@ -8,27 +8,24 @@ on:
 jobs:
   pull-data:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements_collector.txt
-
       - name: Retrieve the secret and run Python script
         env:
           BOCHUM_ECOWITT_APPLICATION_KEY: ${{ secrets.BOCHUM_ECOWITT_APPLICATION_KEY }}
           BOCHUM_ECOWITT_API_KEY: ${{ secrets.BOCHUM_ECOWITT_API_KEY }}
         run: python collector/collect_ecowitt.py
-
       - name: Commit and push CSV file
         run: |
           git config --global user.email "philipp.zuber@posteo.de"
