@@ -1,4 +1,4 @@
-name: Daily collector
+name: Daily collector ecowitt gw2001
 
 on:
   schedule:
@@ -32,6 +32,6 @@ jobs:
         run: |
           git config --global user.email "philipp.zuber@posteo.de"
           git config --global user.name "zuberspace"
-          git add archive/ecowitt/*.csv
-          git commit -m "Update EcoWitt csv"
+          git add data/ENVI/ecowitt_gw2001/*.csv
+          git commit -m "Update EcoWitt GW2001 Station weather data csv"
           git push
