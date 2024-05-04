@@ -36,6 +36,8 @@ def load_device_list():
         if json_data['code'] == 0:
             devices = json_data['data']['list']
             df = pd.DataFrame(devices)
+        else:
+            print("CAUTION: JSON Data malformed")
     return df
 
 def create_directories_for_devices(base_dir, device_df):
