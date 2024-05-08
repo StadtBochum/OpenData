@@ -333,3 +333,37 @@ def aggregate_monthly_to_yearly(base_dir):
                 print(f"No 'monthly' directory found for {entry}")
         else:
             print(f"Skipped {device_dir}, which is not a directory")
+
+
+def aggregate_yearly_to_one_file(base_dir):
+    """
+    Aggregates all yearly CSV files within each device's 'yearly' subdirectory in the base directory
+    into a single CSV file per device.
+
+    Args:
+    base_dir (str): The path to the base directory containing device subdirectories with 'yearly' folders.
+    """
+    for device_entry in os.listdir(base_dir):  # Iterate over each device directory in the base directory
+        device_dir = os.path.join(base_dir, device_entry)
+        yearly_dir = os.path.join(device_dir, 'yearly')
+        
+        if os.path.isdir(yearly_dir):  # Make sure the 'yearly' directory exists
+            all_yearly_data = []  # List to store DataFrames from all yearly files
+
+            # Loop through all CSV files in the 'yearly' directory
+            for yearly_file in os.listdir(yearly_dir):
+                if yearly_file.endswith('.csv'):
+                    file_path = os.path.join(yearly_dir, yearly_file)
+                    df = pd.read_csv(file_path)
+                    all_yearly_data.append(df)
+
+            # Concatenate all DataFrames into one, if any are found
+            if all_yearly_data:
+                combined_df = pd.concat(all_yearly_data, ignore_index=True)
+                output_file_path = os.path.join(device_dir, f"bochum_ecowitt_gw2001_{device_entry}_combined.csv")
+                combined_df.to_csv(output_file_path, index=False)
+                print(f"Combined yearly data for {device_entry} written to {output_file_path}")
+            else:
+                print(f"No yearly data files found for {device_entry}")
+        else:
+            print(f"No 'yearly' directory found for {device_entry}")

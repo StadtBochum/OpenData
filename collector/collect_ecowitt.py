@@ -10,7 +10,7 @@ import pandas as pd
 from utils.utils_collect_ecowitt import load_device_list, \
     create_directories_for_devices, load_historic_data_for_days, \
     write_dataframes_to_csv, aggregate_daily_to_monthly, \
-    load_historic_data_for_date, aggregate_monthly_to_yearly
+    aggregate_yearly_to_one_file, aggregate_monthly_to_yearly
 
 
 # Set variables
@@ -51,3 +51,4 @@ write_dataframes_to_csv(data_yesterday, data_dir)
 # Aggregate data from singlle csv files
 aggregate_daily_to_monthly(data_dir)
 aggregate_monthly_to_yearly(data_dir)
+aggregate_yearly_to_one_file(data_dir)
