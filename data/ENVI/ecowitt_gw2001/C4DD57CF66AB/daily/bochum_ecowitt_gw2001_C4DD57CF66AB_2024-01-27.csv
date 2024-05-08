@@ -1,0 +1,3 @@
+datetime,outdoor_temperature,outdoor_feels_like,outdoor_app_temp,outdoor_dew_point,outdoor_humidity,indoor_temperature,indoor_humidity,solar_and_uvi_solar,solar_and_uvi_uvi,rainfall_piezo_rain_rate,rainfall_piezo_daily,rainfall_piezo_event,rainfall_piezo_hourly,rainfall_piezo_weekly,rainfall_piezo_monthly,rainfall_piezo_yearly,wind_wind_speed,wind_wind_gust,wind_wind_direction,pressure_relative,pressure_absolute,battery_haptic_array_battery,battery_haptic_array_capacitor
+2024-01-27 14:00:48+01:00,9.4,9.0,6.7,2.3,61.0,13.0,99.0,157.1,1.0,0.0,0.0,0.0,0.0,36.7,72.4,300.9,5.4,15.5,82.0,1026.3,1026.3,2.74,4.0
+2024-01-27 14:30:40+01:00,8.9,8.6,6.4,1.9,62.0,13.2,99.0,104.0,0.0,0.0,0.0,0.0,0.0,36.7,72.4,300.9,4.5,13.7,98.0,1026.3,1026.3,2.74,4.1
