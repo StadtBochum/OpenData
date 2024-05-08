@@ -10,7 +10,8 @@ import pandas as pd
 from utils.utils_collect_ecowitt import load_device_list, \
     create_directories_for_devices, load_historic_data_for_days, \
     write_dataframes_to_csv, aggregate_daily_to_monthly, \
-    aggregate_yearly_to_one_file, aggregate_monthly_to_yearly
+    aggregate_yearly_to_one_file, aggregate_monthly_to_yearly, \
+    load_historic_data_for_date
 
 
 # Set variables
@@ -34,8 +35,8 @@ create_directories_for_devices(data_dir, ecowitt_gw2001_list)
 
 
 # Download historic data
-#start_date = "2024-04-01"
-#end_date = "2024-04-09"
+#start_date = "2024-01-01"
+#end_date = "2024-03-31"
 #dates_to_process = pd.date_range(start=start_date, end=end_date, freq='D').strftime('%Y-%m-%d')
 #if True == True:
 #    for date in dates_to_process:

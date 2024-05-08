@@ -360,7 +360,7 @@ def aggregate_yearly_to_one_file(base_dir):
             # Concatenate all DataFrames into one, if any are found
             if all_yearly_data:
                 combined_df = pd.concat(all_yearly_data, ignore_index=True)
-                output_file_path = os.path.join(device_dir, f"bochum_ecowitt_gw2001_{device_entry}_combined.csv")
+                output_file_path = os.path.join(device_dir, f"bochum_ecowitt_gw2001_{device_entry}.csv")
                 combined_df.to_csv(output_file_path, index=False)
                 print(f"Combined yearly data for {device_entry} written to {output_file_path}")
             else:
