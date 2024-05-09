@@ -271,11 +271,11 @@ def aggregate_daily_to_monthly(base_dir):
 
             if os.path.exists(daily_dir):
                 # Process each CSV file within the 'daily' directory
-                for file_name in sorted(os.listdir(daily_dir)):
-                    if file_name.endswith('.csv'):
-                        file_path = os.path.join(daily_dir, file_name)
+                for daily_file in sorted(os.listdir(daily_dir)):
+                    if daily_file.endswith('.csv'):
+                        file_path = os.path.join(daily_dir, daily_file)
                         df = pd.read_csv(file_path)
-                        month_year = pd.to_datetime(file_name.split('_')[-1].split('.')[0]).strftime('%Y-%m')
+                        month_year = pd.to_datetime(daily_file.split('_')[-1].split('.')[0]).strftime('%Y-%m')
 
                         if month_year not in monthly_data_groups:
                             monthly_data_groups[month_year] = []
@@ -315,12 +315,12 @@ def aggregate_monthly_to_yearly(base_dir):
             if os.path.exists(monthly_dir):
                 # Group files by year
                 yearly_files = {}
-                for file_name in os.listdir(monthly_dir):
-                    if file_name.endswith('.csv'):
-                        year = file_name.split('_')[-1][:4]  # Extract year from filename
+                for monthly_file in sorted(os.listdir(monthly_dir)):
+                    if monthly_file.endswith('.csv'):
+                        year = monthly_file.split('_')[-1][:4]  # Extract year from filename
                         if year not in yearly_files:
                             yearly_files[year] = []
-                        yearly_files[year].append(os.path.join(monthly_dir, file_name))
+                        yearly_files[year].append(os.path.join(monthly_dir, monthly_file))
 
                 # Aggregate data by year and write to yearly CSV files
                 for year, files in yearly_files.items():
@@ -351,7 +351,7 @@ def aggregate_yearly_to_one_file(base_dir):
             all_yearly_data = []  # List to store DataFrames from all yearly files
 
             # Loop through all CSV files in the 'yearly' directory
-            for yearly_file in os.listdir(yearly_dir):
+            for yearly_file in sorted(os.listdir(yearly_dir)):
                 if yearly_file.endswith('.csv'):
                     file_path = os.path.join(yearly_dir, yearly_file)
                     df = pd.read_csv(file_path)
