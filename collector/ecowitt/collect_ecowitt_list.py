@@ -47,6 +47,12 @@ merged_df['Longitude'] = merged_df['Longitude_api'].combine_first(merged_df['Lon
 # Drop the temporary columns used for merging
 merged_df = merged_df[['Name', 'Latitude', 'Longitude', 'MAC']]
 
+# Sort the merged DataFrame by MAC
+merged_df = merged_df.sort_values(by='MAC')
+
+# Sort the extended DataFrame by ID
+api_df = api_df.sort_values(by='id')
+
 # Define the directory to save the CSV files
 data_dir = os.path.join(os.getcwd(), "data/ENVI/ecowitt_gw2001")
 os.makedirs(data_dir, exist_ok=True)
@@ -58,10 +64,3 @@ merged_df.to_csv(merged_csv_path, index=False)
 # Save all API data to another CSV file
 api_csv_path = os.path.join(data_dir, 'bochum_ecowitt_gw2001_extended.csv')
 api_df.to_csv(api_csv_path, index=False)
-
-# Show the column names of the new CSVs
-print("Columns in the merged CSV:")
-print(merged_df.columns)
-
-print("\nColumns in the extended CSV:")
-print(api_df.columns)
