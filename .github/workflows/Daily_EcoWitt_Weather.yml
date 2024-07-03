@@ -1,4 +1,4 @@
-name: Daily collector ecowitt gw2001
+name: Daily EcoWitt Weather
 
 on:
   schedule:
