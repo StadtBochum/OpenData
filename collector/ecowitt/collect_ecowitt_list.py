@@ -37,7 +37,7 @@ api_relevant_df = api_df[['name', 'latitude', 'longitude', 'mac']].rename(
 )
 
 # Merge the existing CSV data with the new API data based on the 'Mac' column
-merged_df = pd.merge(locations_csv, api_relevant_df, left_on='Mac', right_on='Mac', how='outer', suffixes=('_csv', '_api'))
+merged_df = pd.merge(locations_csv, api_relevant_df, left_on='MAC', right_on='Mac', how='outer', suffixes=('_csv', '_api'))
 
 # Use the API data if available, otherwise keep the existing CSV data
 merged_df['Name'] = merged_df['Name_api'].combine_first(merged_df['Name_csv'])
@@ -45,7 +45,7 @@ merged_df['Latitude'] = merged_df['Latitude_api'].combine_first(merged_df['Latit
 merged_df['Longitude'] = merged_df['Longitude_api'].combine_first(merged_df['Longitude_csv'])
 
 # Drop the temporary columns used for merging
-merged_df = merged_df[['Name', 'Latitude', 'Longitude', 'Mac']]
+merged_df = merged_df[['Name', 'Latitude', 'Longitude', 'MAC']]
 
 # Define the directory to save the CSV files
 data_dir = os.path.join(os.getcwd(), "data/ENVI/ecowitt_gw2001")
