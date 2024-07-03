@@ -1,6 +1,7 @@
 import os
 import requests
 import pandas as pd
+from datetime import datetime
 
 # Retrieve the API keys from environment variables
 application_key = os.getenv("BOCHUM_ECOWITT_APPLICATION_KEY")
@@ -10,6 +11,13 @@ api_key = os.getenv("BOCHUM_ECOWITT_API_KEY")
 api_endpoint = 'https://api.ecowitt.net/api/v3/device/'
 location_csv_url = 'https://raw.githubusercontent.com/StadtBochum/OpenData/main/data/ENVI/ecowitt_gw2001/bochum_ecowitt_gw2001_locations.csv'
 extended_csv_url = 'https://raw.githubusercontent.com/StadtBochum/OpenData/main/data/ENVI/ecowitt_gw2001/bochum_ecowitt_gw2001_extended.csv'
+
+# Define the directory to save the CSV files
+data_dir = os.path.join(os.getcwd(), "data/ENVI/ecowitt_gw2001")
+os.makedirs(data_dir, exist_ok=True)
+
+# Define the status CSV file path using data_dir
+status_csv_path = os.path.join(data_dir, "bochum_ecowitt_gw2001_device_status.csv")
 
 # Fetch the existing CSV data
 locations_csv = pd.read_csv(location_csv_url)
@@ -66,10 +74,6 @@ merged_extended_df = merged_extended_df[api_df.columns]
 # Sort the extended DataFrame by ID
 merged_extended_df = merged_extended_df.sort_values(by='id')
 
-# Define the directory to save the CSV files
-data_dir = os.path.join(os.getcwd(), "data/ENVI/ecowitt_gw2001")
-os.makedirs(data_dir, exist_ok=True)
-
 # Save the merged locations data to a new CSV file
 merged_locations_csv_path = os.path.join(data_dir, 'bochum_ecowitt_gw2001_locations.csv')
 merged_locations_df.to_csv(merged_locations_csv_path, index=False)
@@ -77,3 +81,23 @@ merged_locations_df.to_csv(merged_locations_csv_path, index=False)
 # Save the merged extended data to a new CSV file
 merged_extended_csv_path = os.path.join(data_dir, 'bochum_ecowitt_gw2001_extended.csv')
 merged_extended_df.to_csv(merged_extended_csv_path, index=False)
+
+# Prepare the device status data
+current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+mac_addresses = locations_csv['MAC'].unique()
+status_dict = {'datetime': [current_time]}
+
+for mac in mac_addresses:
+    status_dict[mac] = ['online' if mac in api_relevant_df['Mac'].values else 'offline']
+
+status_df = pd.DataFrame(status_dict)
+
+# Append the new status to the existing status CSV, if it exists, otherwise create it
+if os.path.exists(status_csv_path):
+    existing_status_df = pd.read_csv(status_csv_path)
+    combined_status_df = pd.concat([existing_status_df, status_df], ignore_index=True)
+else:
+    combined_status_df = status_df
+
+# Save the combined status data to the CSV file
+combined_status_df.to_csv(status_csv_path, index=False)
