@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 import pytz
 import pandas as pd
 
-from utils.utils_collect_ecowitt import load_device_list, \
+from utils.utils_ecowitt_weather import load_device_list, \
     create_directories_for_devices, load_historic_data_for_days, \
     write_dataframes_to_csv, aggregate_daily_to_monthly, \
     aggregate_yearly_to_one_file, aggregate_monthly_to_yearly, \
