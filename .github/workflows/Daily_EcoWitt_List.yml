@@ -31,8 +31,9 @@ jobs:
           git config --global user.email "philipp.zuber@posteo.de"
           git config --global user.name "zuberspace"
           git add --all data/ENVI/ecowitt_gw2001/
-          if ! git diff-index --quiet HEAD --; then
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to commit"
+          else
             git commit -m "Daily weather update (EcoWitt GW2001)"
             git push
-          else
-            echo "No changes to commit"
+          fi
