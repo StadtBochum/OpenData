@@ -1,4 +1,4 @@
-name: Daily EcoWitt List
+name: EcoWitt List Daily
 
 on:
   schedule:
