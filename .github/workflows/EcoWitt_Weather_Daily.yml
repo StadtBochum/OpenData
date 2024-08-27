@@ -1,4 +1,4 @@
-name: Daily EcoWitt Weather
+name: EcoWitt Weather Daily
 
 on:
   schedule:
