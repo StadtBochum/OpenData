@@ -1,0 +1,43 @@
+name: ENVI Terratransfer Logger Daily
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # Runs daily at 01:00 AM UTC
+  workflow_dispatch:
+
+jobs:
+  pull-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r collector/terratransfer/requirements_terratransfer.txt
+
+      - name: Retrieve the secret and run Python script
+        env:
+          BOCHUM_TERRATRANSFER_API_URL: ${{ secrets.BOCHUM_TERRATRANSFER_API_URL }}
+          BOCHUM_TERRATRANSFER_API_KEY: ${{ secrets.BOCHUM_TERRATRANSFER_API_KEY }}
+        run: python collector/terratransfer/collect_terratransfer_logger.py
+
+      - name: Commit and push CSV files
+        run: |
+          git config --global user.email "philipp.zuber@posteo.de"
+          git config --global user.name "zuberspace"
+          git add --all data/ENVI/terratransfer/
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily terratransfer update"
+            git push
+          fi
