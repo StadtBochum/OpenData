@@ -15,7 +15,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Define the working directory
-working_directory = 'terratransfer'
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+working_directory = os.path.join(os.getcwd(), "data/ENVI/terratransfer")
 os.makedirs(working_directory, exist_ok=True)
 
 # Path to the CSV file containing logger information
