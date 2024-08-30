@@ -1,4 +1,5 @@
 # Gewässersensorik der Stadt Bochum
+Aquatos Web Logger mit unterschiedlicher Sensorik der Firma TerraTransfer
 
 | #   | Logger ID | Name               | Latitude | Longitude |
 |-----|-----------|--------------------|----------|-----------|
