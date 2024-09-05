@@ -57,7 +57,7 @@ def aggregate_daily_to_monthly(logger_id, name, working_directory):
 
     for month, dfs in monthly_data.items():
         monthly_df = pd.concat(dfs).sort_values('datetime')
-        monthly_file = os.path.join(monthly_folder, f'bochum_terratransfer_{logger_id}_{month}.csv')
+        monthly_file = os.path.join(monthly_folder, f'bochum_terratransfer_{logger_id}_{sanitized_name}_{month}.csv')
         monthly_df.to_csv(monthly_file, index=False)
         logger.info(f"Aggregated daily files into monthly file: {monthly_file}")
 
@@ -95,7 +95,7 @@ def aggregate_monthly_to_yearly(logger_id, name, working_directory='terratransfe
 
     for year, dfs in yearly_data.items():
         yearly_df = pd.concat(dfs).sort_values('datetime')
-        yearly_file = os.path.join(yearly_folder, f'bochum_terratransfer_{logger_id}_{year}.csv')
+        yearly_file = os.path.join(yearly_folder, f'bochum_terratransfer_{logger_id}_{sanitized_name}_{year}.csv')
         yearly_df.to_csv(yearly_file, index=False)
         logger.info(f"Aggregated monthly files into yearly file: {yearly_file}")
 
@@ -103,7 +103,7 @@ def aggregate_yearly_to_summary(logger_id, name, working_directory='terratransfe
     sanitized_name = re.sub(r'\W+', '_', name).lower()
     logger_folder = os.path.join(working_directory, f'{logger_id}_{sanitized_name}')
     yearly_folder = os.path.join(logger_folder, 'yearly')
-    summary_file = os.path.join(logger_folder, f'bochum_terratransfer_{logger_id}_summary.csv')
+    summary_file = os.path.join(logger_folder, f'bochum_terratransfer_{logger_id}_{sanitized_name}_summary.csv')
 
     # Check if the yearly folder exists
     if not os.path.exists(yearly_folder):
