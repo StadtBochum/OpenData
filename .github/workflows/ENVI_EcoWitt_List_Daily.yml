@@ -22,13 +22,13 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r collector/ecowitt/requirements_ecowitt_list.txt
+          pip install -r tools/ecowitt/requirements_ecowitt_list.txt
           
       - name: Retrieve the secret and run Python script
         env:
           BOCHUM_ECOWITT_APPLICATION_KEY: ${{ secrets.BOCHUM_ECOWITT_APPLICATION_KEY }}
           BOCHUM_ECOWITT_API_KEY: ${{ secrets.BOCHUM_ECOWITT_API_KEY }}
-        run: python collector/ecowitt/collect_ecowitt_list.py
+        run: python tools/ecowitt/ecowitt_collect_list.py
         
       - name: Commit and push CSV file
         run: |

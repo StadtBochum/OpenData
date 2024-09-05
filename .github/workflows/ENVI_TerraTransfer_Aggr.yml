@@ -20,10 +20,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r collector/terratransfer/requirements_terratransfer.txt
+          pip install -r tools/terratransfer/requirements_terratransfer.txt
 
       - name: Aggregate TerraTransfer data
-        run: python collector/terratransfer/aggregate_terratransfer_logger.py
+        run: python tools/terratransfer/terratransfer_aggregate_logger.py
 
       - name: Commit and push CSV files
         run: |
