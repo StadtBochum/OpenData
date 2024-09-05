@@ -7,11 +7,13 @@ from datetime import datetime, timedelta
 import pytz
 import pandas as pd
 
-from utils.utils_ecowitt_weather import load_device_list, \
-    create_directories_for_devices, load_historic_data_for_days, \
-    write_dataframes_to_csv, aggregate_daily_to_monthly, \
-    aggregate_yearly_to_one_file, aggregate_monthly_to_yearly, \
-    load_historic_data_for_date
+from utils.utils_ecowitt_weather import (
+    load_device_list,
+    create_directories_for_devices,
+    load_historic_data_for_days,
+    write_dataframes_to_csv
+    #load_historic_data_for_date
+)
 
 
 # Set variables
@@ -47,9 +49,3 @@ create_directories_for_devices(data_dir, ecowitt_gw2001_list)
 # Get yesterdays weather data for every device
 data_yesterday = load_historic_data_for_days(ecowitt_gw2001_list)
 write_dataframes_to_csv(data_yesterday, data_dir)
-
-
-# Aggregate data from singlle csv files
-aggregate_daily_to_monthly(data_dir)
-aggregate_monthly_to_yearly(data_dir)
-aggregate_yearly_to_one_file(data_dir)

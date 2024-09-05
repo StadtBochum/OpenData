@@ -13,19 +13,26 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r collector/ecowitt/requirements_ecowitt_weather.txt
-      - name: Retrieve the secret and run Python script
+
+      - name: Retrieve the secret and run EcoWitt Python script
         env:
           BOCHUM_ECOWITT_APPLICATION_KEY: ${{ secrets.BOCHUM_ECOWITT_APPLICATION_KEY }}
           BOCHUM_ECOWITT_API_KEY: ${{ secrets.BOCHUM_ECOWITT_API_KEY }}
         run: python collector/ecowitt/collect_ecowitt_weather.py
+
+      - name: Aggregate EcoWitt data
+        run: python collector/ecowitt/aggregate_ecowitt_weather.py
+
       - name: Commit and push CSV file
         run: |
           git config --global user.email "philipp.zuber@posteo.de"
