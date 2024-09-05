@@ -5,7 +5,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def aggregate_daily_to_monthly(logger_id, name, working_directory='terratransfer'):
+def aggregate_daily_to_monthly(logger_id, name, working_directory):
     sanitized_name = re.sub(r'\W+', '_', name).lower()
     logger_folder = os.path.join(working_directory, f'{logger_id}_{sanitized_name}')
     daily_folder = os.path.join(logger_folder, 'daily')

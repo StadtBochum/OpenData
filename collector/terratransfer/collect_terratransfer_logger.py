@@ -92,7 +92,7 @@ def fetch_and_save_data(logger_id, latitude, longitude, name):
             logger_folder = os.path.join(working_directory, f'{logger_id}_{sanitized_name}', 'daily')
             os.makedirs(logger_folder, exist_ok=True)
 
-            filename = os.path.join(logger_folder, f'bochum_terratransfer_{logger_id}_{today_date}.csv')
+            filename = os.path.join(logger_folder, f'bochum_terratransfer_{logger_id}_{sanitized_name}_{today_date}.csv')
 
             logger.info(f"Saving data to {filename}")
             with open(filename, mode='w', newline='') as file:
@@ -139,6 +139,6 @@ if all_rows:
 
 # Aggregate data
 for logger_info in loggers_data:
-    aggregate_daily_to_monthly(logger_info['logger_id'], logger_info['name'])
-    aggregate_monthly_to_yearly(logger_info['logger_id'], logger_info['name'])
-    aggregate_yearly_to_summary(logger_info['logger_id'], logger_info['name'])
+    aggregate_daily_to_monthly(logger_info['logger_id'], logger_info['name'], working_directory)
+    aggregate_monthly_to_yearly(logger_info['logger_id'], logger_info['name'], working_directory)
+    aggregate_yearly_to_summary(logger_info['logger_id'], logger_info['name'], working_directory)
