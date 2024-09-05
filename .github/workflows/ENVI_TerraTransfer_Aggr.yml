@@ -1,4 +1,4 @@
-name: ENVI Terratransfer Logger Daily
+name: ENVI Terratransfer Aggregate
 
 on:
   workflow_dispatch:
