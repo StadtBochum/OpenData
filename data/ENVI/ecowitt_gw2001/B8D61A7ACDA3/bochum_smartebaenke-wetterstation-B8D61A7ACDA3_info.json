@@ -1,0 +1,147 @@
+{
+    "name": "bochum-smarte-banke-wetterstation-B8D61A7ACDA3",
+    "title": "Bochum - Smarte Bänke - Wetterstation Ladenzeile Rosenberg",
+    "private": false,
+    "author": "Philipp Zuber",
+    "author_email": "opendata@bochum.de",
+    "maintainer": "Philipp Zuber",
+    "maintainer_email": "opendata@bochum.de",
+    "license_id": "CC0-1.0",
+    "notes": "An insgesamt __12 Standorten__ sind die neuen Sitzmöbel aufgestellt, insgesamt zwei pro Stadtbezirk. Sie machen Spaziergänge und Ausflüge bequemer und laden die Bochumerinnen und Bochumer dazu ein, mit dem Fahrrad und dem E-Bike mobil zu sein – so ist Nachhaltigkeit spannend und macht Spaß. Die smarten Bänke bieten zudem eine integrierte Wetterstation sowie einen leistungsstarken WLAN-Hotspot. Die Energieversorgung erfolgt über effiziente __Photovoltaik-Module__ auf dem Dach, die gleichzeitig Schutz vor Witterung bieten. Diese wegweisenden Sitzmöbel ermöglichen das __kabellose Aufladen__ von zwei Smartphones, sofern sie induktives Laden über den weit verbreiteten Qi-Standard unterstützen. Darüber hinaus können zwei E-Bikes mit Bosch- beziehungsweise  BMZ-Ladesystemen parallel über integrierte Ladekabel geladen werden. Der integrierte __5G WLAN-Hotspot__ bietet kostenfreien und schnellen Internetzugang. Eine __Wetterstation__ auf der Oberseite der Bänke misst verschiedene meteorologische Daten wie die __Luftfeuchte, Temperatur, UV-Index, Windgeschwindigkeit und Regen__. Die energiesparende Beleuchtung erfolgt durch sensor- und bewegungsgesteuerte, adaptive __LED-Leuchten__.",
+    "url": "https://bochum-smartcity.de/smartebaenke",
+    "state": "active",
+    "tags": [
+        {
+            "display_name": "Bank",
+            "id": "e3f4d4f3-7e1a-4bf5-be50-0d555de32c1f",
+            "name": "Bank",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "E-Bike",
+            "id": "0f869bd8-03fa-4ea5-ba84-e3fe6c8ebf8c",
+            "name": "E-Bike",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Energieversorgung",
+            "id": "4166d5e9-04d5-42fb-971c-136dace0b804",
+            "name": "Energieversorgung",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Ladestation",
+            "id": "e4b99482-46b9-4d1c-8c9e-33ba0727b388",
+            "name": "Ladestation",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Luftfeuchte",
+            "id": "ca47f507-c0df-4210-8451-c716592ad7c6",
+            "name": "Luftfeuchte",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Nachhaltigkeit",
+            "id": "81f87d58-abc4-46b7-bd6b-7a55de590e24",
+            "name": "Nachhaltigkeit",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Photovoltaik",
+            "id": "84be0cbb-f76f-4804-b9a8-a1e38e9f7e8e",
+            "name": "Photovoltaik",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Regen",
+            "id": "43de2099-d091-43f2-81dd-fae152af85a5",
+            "name": "Regen",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Smarte Bänke",
+            "id": "5d6c7b00-bf59-47c5-bdfa-1471ea8bd8b5",
+            "name": "Smarte Bänke",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Temperatur",
+            "id": "17d3a94d-74fa-40e8-a5c9-5ae7f0443037",
+            "name": "Temperatur",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "UV-Index",
+            "id": "78fe4639-ccd2-4933-bc22-120629016742",
+            "name": "UV-Index",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Umweltdaten",
+            "id": "e79c7da9-4a22-4140-96d3-39f4f139a44f",
+            "name": "Umweltdaten",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "W-Lan",
+            "id": "c5ebba8c-a2ea-4f41-bbab-15a18ea77bf1",
+            "name": "W-Lan",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Wetterstation",
+            "id": "d416bd43-7f42-4ae1-9e1a-0de43275672c",
+            "name": "Wetterstation",
+            "state": "active",
+            "vocabulary_id": null
+        },
+        {
+            "display_name": "Windgeschwindigkeit",
+            "id": "53b4e8d3-b869-4db8-a6ea-a19ec3cb4929",
+            "name": "Windgeschwindigkeit",
+            "state": "active",
+            "vocabulary_id": null
+        }
+    ],
+    "groups": [
+        {
+            "description": "",
+            "display_name": "Bevölkerung und Gesellschaft",
+            "id": "61a8369a-ad8f-4b7a-bfe7-1f7f63c5748a",
+            "image_display_url": "https://bochum.opendata.ruhr/uploads/group/2023-08-21-125304.179866whitespace96200.png",
+            "name": "soci",
+            "title": "Bevölkerung und Gesellschaft"
+        },
+        {
+            "description": "",
+            "display_name": "Bildung, Kultur und Sport",
+            "id": "f0473c75-3329-4f08-b1b3-0121cb835e14",
+            "image_display_url": "https://bochum.opendata.ruhr/uploads/group/2023-08-21-125257.003925whitespace96200.png",
+            "name": "educ",
+            "title": "Bildung, Kultur und Sport"
+        },
+        {
+            "description": "",
+            "display_name": "Umwelt",
+            "id": "0224bdc0-6386-4ebd-959d-96290dc3d2f2",
+            "image_display_url": "https://bochum.opendata.ruhr/uploads/group/2023-08-21-125125.059774whitespace119200.png",
+            "name": "envi",
+            "title": "Umwelt"
+        }
+    ],
+    "owner_org": "7c8a231d-f826-4f6d-b8e0-5bcfcd9ff5d5",
+}
