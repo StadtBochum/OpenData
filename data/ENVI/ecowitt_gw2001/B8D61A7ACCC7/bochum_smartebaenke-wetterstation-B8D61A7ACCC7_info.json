@@ -1,13 +1,13 @@
 {
-    "name": "bochum-smarte-banke-wetterstation-B8D61A7ACCC7",
-    "title": "Bochum - Smarte Bänke - Wetterstation Böckenbergstr.",
+    "name": "bochum-smarte-banke-wetterstation-b8d61a7accc7",
+    "title": "Bochum - Smarte B\u00e4nke - Wetterstation B\u00f6ckenbergstr.",
     "private": false,
     "author": "Philipp Zuber",
     "author_email": "opendata@bochum.de",
     "maintainer": "Philipp Zuber",
     "maintainer_email": "opendata@bochum.de",
     "license_id": "CC0-1.0",
-    "notes": "An insgesamt __12 Standorten__ sind die neuen Sitzmöbel aufgestellt, insgesamt zwei pro Stadtbezirk. Sie machen Spaziergänge und Ausflüge bequemer und laden die Bochumerinnen und Bochumer dazu ein, mit dem Fahrrad und dem E-Bike mobil zu sein – so ist Nachhaltigkeit spannend und macht Spaß. Die smarten Bänke bieten zudem eine integrierte Wetterstation sowie einen leistungsstarken WLAN-Hotspot. Die Energieversorgung erfolgt über effiziente __Photovoltaik-Module__ auf dem Dach, die gleichzeitig Schutz vor Witterung bieten. Diese wegweisenden Sitzmöbel ermöglichen das __kabellose Aufladen__ von zwei Smartphones, sofern sie induktives Laden über den weit verbreiteten Qi-Standard unterstützen. Darüber hinaus können zwei E-Bikes mit Bosch- beziehungsweise  BMZ-Ladesystemen parallel über integrierte Ladekabel geladen werden. Der integrierte __5G WLAN-Hotspot__ bietet kostenfreien und schnellen Internetzugang. Eine __Wetterstation__ auf der Oberseite der Bänke misst verschiedene meteorologische Daten wie die __Luftfeuchte, Temperatur, UV-Index, Windgeschwindigkeit und Regen__. Die energiesparende Beleuchtung erfolgt durch sensor- und bewegungsgesteuerte, adaptive __LED-Leuchten__.",
+    "notes": "An insgesamt __12 Standorten__ sind die neuen Sitzm\u00f6bel aufgestellt, insgesamt zwei pro Stadtbezirk. Sie machen Spazierg\u00e4nge und Ausfl\u00fcge bequemer und laden die Bochumerinnen und Bochumer dazu ein, mit dem Fahrrad und dem E-Bike mobil zu sein \u2013 so ist Nachhaltigkeit spannend und macht Spa\u00df. Die smarten B\u00e4nke bieten zudem eine integrierte Wetterstation sowie einen leistungsstarken WLAN-Hotspot. Die Energieversorgung erfolgt \u00fcber effiziente __Photovoltaik-Module__ auf dem Dach, die gleichzeitig Schutz vor Witterung bieten. Diese wegweisenden Sitzm\u00f6bel erm\u00f6glichen das __kabellose Aufladen__ von zwei Smartphones, sofern sie induktives Laden \u00fcber den weit verbreiteten Qi-Standard unterst\u00fctzen. Dar\u00fcber hinaus k\u00f6nnen zwei E-Bikes mit Bosch- beziehungsweise  BMZ-Ladesystemen parallel \u00fcber integrierte Ladekabel geladen werden. Der integrierte __5G WLAN-Hotspot__ bietet kostenfreien und schnellen Internetzugang. Eine __Wetterstation__ auf der Oberseite der B\u00e4nke misst verschiedene meteorologische Daten wie die __Luftfeuchte, Temperatur, UV-Index, Windgeschwindigkeit und Regen__. Die energiesparende Beleuchtung erfolgt durch sensor- und bewegungsgesteuerte, adaptive __LED-Leuchten__.",
     "url": "https://bochum-smartcity.de/smartebaenke",
     "state": "active",
     "tags": [
@@ -68,9 +68,9 @@
             "vocabulary_id": null
         },
         {
-            "display_name": "Smarte Bänke",
+            "display_name": "Smarte B\u00e4nke",
             "id": "5d6c7b00-bf59-47c5-bdfa-1471ea8bd8b5",
-            "name": "Smarte Bänke",
+            "name": "Smarte B\u00e4nke",
             "state": "active",
             "vocabulary_id": null
         },
@@ -120,11 +120,11 @@
     "groups": [
         {
             "description": "",
-            "display_name": "Bevölkerung und Gesellschaft",
+            "display_name": "Bev\u00f6lkerung und Gesellschaft",
             "id": "61a8369a-ad8f-4b7a-bfe7-1f7f63c5748a",
             "image_display_url": "https://bochum.opendata.ruhr/uploads/group/2023-08-21-125304.179866whitespace96200.png",
             "name": "soci",
-            "title": "Bevölkerung und Gesellschaft"
+            "title": "Bev\u00f6lkerung und Gesellschaft"
         },
         {
             "description": "",
@@ -143,5 +143,5 @@
             "title": "Umwelt"
         }
     ],
-    "owner_org": "7c8a231d-f826-4f6d-b8e0-5bcfcd9ff5d5",
+    "owner_org": "7c8a231d-f826-4f6d-b8e0-5bcfcd9ff5d5"
 }

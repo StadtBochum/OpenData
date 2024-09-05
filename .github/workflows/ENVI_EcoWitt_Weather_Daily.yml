@@ -33,6 +33,9 @@ jobs:
       - name: Aggregate EcoWitt data
         run: python tools/ecowitt/ecowitt_aggregate_weather.py
 
+      - name: Upload data to CKAN
+        run: python tools/ecowitt/ecowitt_ckan_upload.py
+
       - name: Commit and push CSV file
         run: |
           git config --global user.email "philipp.zuber@posteo.de"
