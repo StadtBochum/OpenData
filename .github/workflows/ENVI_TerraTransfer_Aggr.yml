@@ -1,8 +1,6 @@
 name: ENVI Terratransfer Logger Daily
 
 on:
-  schedule:
-    - cron: '50 23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -23,12 +21,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r collector/terratransfer/requirements_terratransfer.txt
-
-      - name: Retrieve the secret and run TerraTransfer Python script
-        env:
-          BOCHUM_TERRATRANSFER_API_URL: ${{ secrets.BOCHUM_TERRATRANSFER_API_URL }}
-          BOCHUM_TERRATRANSFER_API_KEY: ${{ secrets.BOCHUM_TERRATRANSFER_API_KEY }}
-        run: python collector/terratransfer/collect_terratransfer_logger.py
 
       - name: Aggregate TerraTransfer data
         run: python collector/terratransfer/aggregate_terratransfer_logger.py

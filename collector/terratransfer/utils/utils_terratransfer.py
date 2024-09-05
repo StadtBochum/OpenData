@@ -1,9 +1,25 @@
 import os
 import re
+import csv
 import pandas as pd
 import logging
 
 logger = logging.getLogger(__name__)
+
+def get_terratransfer_logger(logger_info_file):
+    loggers_data = []
+    # Load data from the CSV file
+    with open(logger_info_file, mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            loggers_data.append({
+                'logger_id': row['logger_id'],
+                'name': row['name'],
+                'latitude': float(row['latitude']),
+                'longitude': float(row['longitude'])
+            })
+
+    return loggers_data
 
 def aggregate_daily_to_monthly(logger_id, name, working_directory):
     sanitized_name = re.sub(r'\W+', '_', name).lower()

@@ -5,11 +5,7 @@ import csv
 import requests
 from datetime import datetime
 import logging
-from utils.utils_terratransfer import (
-    aggregate_daily_to_monthly,
-    aggregate_monthly_to_yearly,
-    aggregate_yearly_to_summary
-)
+from utils.utils_terratransfer import get_terratransfer_logger
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -23,18 +19,7 @@ os.makedirs(working_directory, exist_ok=True)
 # Path to the CSV file containing logger information
 logger_info_file = os.path.join(working_directory, 'bochum_terratransfer_logger.csv')
 
-loggers_data = []
-
-# Load data from the CSV file
-with open(logger_info_file, mode='r') as file:
-    reader = csv.DictReader(file)
-    for row in reader:
-        loggers_data.append({
-            'logger_id': row['logger_id'],
-            'name': row['name'],
-            'latitude': float(row['latitude']),
-            'longitude': float(row['longitude'])
-        })
+loggers_data = get_terratransfer_logger(logger_info_file)
 
 api_key = os.getenv("BOCHUM_TERRATRANSFER_API_KEY")
 api_url = os.getenv('BOCHUM_TERRATRANSFER_API_URL')
@@ -136,9 +121,3 @@ if all_rows:
         writer.writerows(all_rows_sorted_desc)
 
     logger.info(f"Summarized data successfully saved to {summary_filename}")
-
-# Aggregate data
-for logger_info in loggers_data:
-    aggregate_daily_to_monthly(logger_info['logger_id'], logger_info['name'], working_directory)
-    aggregate_monthly_to_yearly(logger_info['logger_id'], logger_info['name'], working_directory)
-    aggregate_yearly_to_summary(logger_info['logger_id'], logger_info['name'], working_directory)
