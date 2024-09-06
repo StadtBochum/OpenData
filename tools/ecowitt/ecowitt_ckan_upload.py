@@ -104,34 +104,22 @@ def process_mac_directory(mac_dir):
     if json_file:
         print(f"Found JSON file: {json_file}")
     else:
-        print(f"No JSON file found in {mac_dir}. Skipping...")
-        return
+        raise Exception(f"No JSON file found in {mac_dir}. Skipping...")
 
     if csv_file:
         print(f"Found CSV file: {csv_file}")
     else:
-        print(f"No CSV file found in {mac_dir}. Skipping...")
-        return
+        raise Exception(f"No CSV file found in {mac_dir}. Skipping...")
 
-    try:
-        with open(json_file, 'r') as f:
-            dataset_info = json.load(f)
-        print(f"Successfully loaded JSON data from {json_file}")
-    except json.JSONDecodeError as e:
-        print(f"JSONDecodeError in {json_file}: {e}")
-        return
-    except Exception as e:
-        print(f"An unexpected error occurred while reading {json_file}: {e}")
-        return
+    with open(json_file, 'r') as f:
+        dataset_info = json.load(f)
+    print(f"Successfully loaded JSON data from {json_file}")
 
-    try:
-        # Create or update the dataset in CKAN
-        dataset_id = create_or_update_dataset(dataset_info)
+    # Create or update the dataset in CKAN
+    dataset_id = create_or_update_dataset(dataset_info)
 
-        # Update or create the resource (CSV file)
-        update_or_create_resource(dataset_id, csv_file)
-    except Exception as e:
-        print(f"An error occurred while processing {mac_dir}: {e}")
+    # Update or create the resource (CSV file)
+    update_or_create_resource(dataset_id, csv_file)
 
 # Function to scan and process all MAC directories
 def scan_and_process():
