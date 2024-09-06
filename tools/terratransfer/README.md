@@ -1,7 +1,10 @@
-graph TD;
-    A["TerraTransfer Collect Logger Script"] --> B["TerraTransfer API (api_key)"];
-    B --> C["Daily Data in Folder"];
-    C --> D["Aggregate Script"];
-    D --> E["Monthly Aggregated Data"];
-    D --> F["Yearly Aggregated Data"];
-    D --> G["Summary Data"];
+1. **TerraTransfer Collect Logger Script**:
+   - Calls the **TerraTransfer API** using an `api_key`.
+   - Retrieves and writes the **daily data** into a folder per device.
+
+2. **Aggregate Script**:
+   - Processes the **daily data**.
+   - Aggregates the data into:
+     - A **monthly data folder**.
+     - A **yearly data folder**.
+     - A **summary file** with all data per device.
