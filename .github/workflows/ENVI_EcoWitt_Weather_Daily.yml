@@ -33,10 +33,10 @@ jobs:
       - name: Aggregate EcoWitt data
         run: python tools/ecowitt/ecowitt_aggregate_weather.py
 
-      - name: Upload data to CKAN
-        env:
-          RVR_BOCHUM_CKAN: ${{ secrets.RVR_BOCHUM_CKAN }}
-        run: python tools/ecowitt/ecowitt_ckan_upload.py
+#      - name: Upload data to CKAN
+#        env:
+#          RVR_BOCHUM_CKAN: ${{ secrets.RVR_BOCHUM_CKAN }}
+#        run: python tools/ecowitt/ecowitt_ckan_upload.py
 
       - name: Commit and push CSV file
         run: |
