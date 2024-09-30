@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2024-10-01,900355,Am Stadtpark,51.49212,7.22238,87.611,13.578,0.0,0.0,598,3.712,16.94,40.2,2024-10
