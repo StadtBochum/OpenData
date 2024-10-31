@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2024-11-01 00:00:01,900193,Teich im Bockholt,51.50471,7.28002,108.488,11.7,0.0,0.0,599,3.677,10.4,100.0,2024-11

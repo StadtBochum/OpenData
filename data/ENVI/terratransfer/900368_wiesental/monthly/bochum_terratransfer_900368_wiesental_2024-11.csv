@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2024-11-01 00:00:01,900368,Wiesental,51.46335,7.21048,84.414,11.522,,,,3.717,11.12,49.5,2024-11
