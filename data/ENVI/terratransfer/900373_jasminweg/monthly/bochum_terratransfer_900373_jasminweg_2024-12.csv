@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2024-12-01 00:00:01,900373,Jasminweg,51.45729,7.14757,94.536,5.156,0,0,353,3.696,6.3,47.1,2024-12

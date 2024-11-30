@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2024-12-01,900372,Kaiseraueteich,51.50069,7.22947,80.942,4.972,41.829,5.332,934,3.657,6.26,34.0,2024-12
