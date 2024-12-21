@@ -1,4 +1,4 @@
-name: ENVI EcoWitt Weather Daily
+name: ENVI EcoWitt CKAN Daily
 
 on:
   schedule:
