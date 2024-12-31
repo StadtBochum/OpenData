@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-01-01,900371,Huelsbergstr,51.43301,7.2142,110.186,4.425,,,,3.639,6.58,44.9,2025-01

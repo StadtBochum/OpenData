@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-01-01,900411,Bluecherstr,51.4954,7.15879,45.946,5.45,,,,3.636,7.57,53.4,2025-01
