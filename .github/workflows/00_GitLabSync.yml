@@ -1,8 +1,8 @@
 name: 00 GitLabSync
 
 on:
-  - push
-  - delete
+#  - push
+#  - delete
 
 jobs:
   sync:
