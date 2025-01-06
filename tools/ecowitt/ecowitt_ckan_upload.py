@@ -66,6 +66,7 @@ def update_or_create_resource(dataset_id, file_path):
     else:
         raise Exception(f"Failed to fetch dataset '{dataset_id}': {response.text}")
 
+
 # Function to upload a file resource to a CKAN dataset (used if no existing resource is found)
 def upload_file_resource(dataset_id, file_path):
     filename = os.path.basename(file_path)
@@ -86,6 +87,66 @@ def upload_file_resource(dataset_id, file_path):
         raise Exception(f"Failed to upload file resource: {response.text}")
     print(f"Resource '{filename}' uploaded successfully.")
 
+# Function to link a file as a resource in a CKAN dataset
+def link_file_resource(dataset_id, file_url):
+    filename = os.path.basename(file_url)
+    print(f"Linking resource '{filename}' to dataset '{dataset_id}'...")
+
+    # Check if the dataset exists
+    response = requests.get(
+        f"{CKAN_API_URL}/package_show",
+        params={"id": dataset_id},
+        headers={"Authorization": CKAN_API_KEY}
+    )
+    
+    if response.status_code == 200:
+        dataset = response.json()["result"]
+        resources = dataset.get("resources", [])
+        
+        # Check if a resource with the same URL already exists
+        for resource in resources:
+            if resource.get("url") == file_url:
+                print(f"Resource with URL '{file_url}' already exists. Updating...")
+                # Update the existing resource
+                update_response = requests.post(
+                    f"{CKAN_API_URL}/resource_update",
+                    headers={"Authorization": CKAN_API_KEY},
+                    data={
+                        "id": resource["id"],
+                        "url": file_url,
+                        "name": filename,
+                        "format": filename.split('.')[-1].upper(),  # Extract format from file extension
+                    }
+                )
+                if update_response.status_code not in (200, 201):
+                    raise Exception(f"Failed to update resource: {update_response.text}")
+                print(f"Resource '{resource['id']}' updated successfully.")
+                return
+        
+        # If no matching resource exists, create a new resource
+        print(f"Creating new resource with URL '{file_url}'...")
+        create_response = requests.post(
+            f"{CKAN_API_URL}/resource_create",
+            headers={"Authorization": CKAN_API_KEY},
+            data={
+                "package_id": dataset_id,
+                "url": file_url,
+                "name": filename,
+                "format": filename.split('.')[-1].upper()  # Extract format from file extension
+            }
+        )
+        if create_response.status_code not in (200, 201):
+            raise Exception(f"Failed to create resource: {create_response.text}")
+        print(f"Resource '{filename}' linked successfully.")
+    else:
+        raise Exception(f"Failed to fetch dataset '{dataset_id}': {response.text}")
+        
+# Function to update or create a resource in a CKAN dataset
+def update_or_create_resource(dataset_id, file_path):
+    # Assuming the file URL is hosted on GitHub or another external server
+    file_url = f"https://example.com/{os.path.basename(file_path)}"  # Replace with your actual base URL
+    link_file_resource(dataset_id, file_url)  
+    
 # Function to process each MAC folder
 def process_mac_directory(mac_dir):
     mac_path = os.path.join(data_dir, mac_dir)
@@ -119,6 +180,9 @@ def process_mac_directory(mac_dir):
     dataset_id = create_or_update_dataset(dataset_info)
 
     # Update or create the resource (CSV file)
+    #update_or_create_resource(dataset_id, csv_file)
+
+    # Link the resource (CSV file)
     update_or_create_resource(dataset_id, csv_file)
 
 # Function to scan and process all MAC directories
