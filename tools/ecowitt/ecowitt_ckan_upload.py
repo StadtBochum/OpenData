@@ -31,7 +31,7 @@ def create_or_update_dataset(dataset_info):
     return response.json()["result"]["id"]
 
 # Function to update or create a resource in a CKAN dataset
-def update_or_create_resource(dataset_id, file_path):
+def update_or_create_resource_old(dataset_id, file_path):
     filename = os.path.basename(file_path)
     response = requests.get(f"{CKAN_API_URL}/package_show", params={"id": dataset_id}, headers={"Authorization": CKAN_API_KEY})
     
@@ -144,7 +144,7 @@ def link_file_resource(dataset_id, file_url):
 # Function to update or create a resource in a CKAN dataset
 def update_or_create_resource(dataset_id, file_path):
     # Assuming the file URL is hosted on GitHub or another external server
-    file_url = f"https://example.com/{os.path.basename(file_path)}"  # Replace with your actual base URL
+    file_url = f"https://raw.githubusercontent.com/user/repo/branch/{os.path.basename(file_path)}"
     link_file_resource(dataset_id, file_url)  
     
 # Function to process each MAC folder
