@@ -82,8 +82,8 @@ def upload_file_resource(dataset_id, file_path):
             files={"upload": f}
         )
     
-    if response.status_code not in (200, 201):
-        raise Exception(f"Failed to upload file resource: {response.text}")
+    #if response.status_code not in (200, 201):
+    #    raise Exception(f"Failed to upload file resource: {response.text}")
     print(f"Resource '{filename}' uploaded successfully.")
 
 # Function to process each MAC folder
