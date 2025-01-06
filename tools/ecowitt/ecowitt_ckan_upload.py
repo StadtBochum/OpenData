@@ -89,7 +89,7 @@ def upload_file_resource(dataset_id, file_path):
 
 # Function to link a file as a resource in a CKAN dataset
 def link_file_resource(dataset_id, file_url):
-    filename = os.path.basename(file_url)
+    filename = file_url
     print(f"Linking resource '{filename}' to dataset '{dataset_id}'...")
 
     # Check if the dataset exists
@@ -141,11 +141,14 @@ def link_file_resource(dataset_id, file_url):
     else:
         raise Exception(f"Failed to fetch dataset '{dataset_id}': {response.text}")
         
-# Function to update or create a resource in a CKAN dataset
-def update_or_create_resource(dataset_id, file_path):
-    # Assuming the file URL is hosted on GitHub or another external server
-    file_url = f"https://raw.githubusercontent.com/user/repo/branch/{os.path.basename(file_path)}"
-    link_file_resource(dataset_id, file_url)  
+def update_or_create_resource(dataset_id, mac_dir, file_path):
+    # Construct the file URL based on the known GitHub structure
+    base_url = "https://raw.githubusercontent.com/StadtBochum/OpenData/refs/heads/main"
+    relative_path = os.path.relpath(file_path, data_dir)
+    file_url = f"{base_url}/data/ENVI/ecowitt_gw2001/{relative_path.replace(os.sep, '/')}"
+    
+    print(f"Generated file URL: {file_url}")
+    link_file_resource(dataset_id, file_url)
     
 # Function to process each MAC folder
 def process_mac_directory(mac_dir):
@@ -180,7 +183,7 @@ def process_mac_directory(mac_dir):
     dataset_id = create_or_update_dataset(dataset_info)
 
     # Update or create the resource (CSV file)
-    #update_or_create_resource(dataset_id, csv_file)
+    #update_or_create_resource_old(dataset_id, csv_file)
 
     # Link the resource (CSV file)
     update_or_create_resource(dataset_id, csv_file)
