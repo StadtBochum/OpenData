@@ -89,7 +89,7 @@ def upload_file_resource(dataset_id, file_path):
 
 # Function to link a file as a resource in a CKAN dataset
 def link_file_resource(dataset_id, file_url):
-    filename = file_url
+    filename = os.path.basename(file_url)
     print(f"Linking resource '{filename}' to dataset '{dataset_id}'...")
 
     # Check if the dataset exists
@@ -141,6 +141,7 @@ def link_file_resource(dataset_id, file_url):
     else:
         raise Exception(f"Failed to fetch dataset '{dataset_id}': {response.text}")
         
+# Function to update or create a resource in a CKAN dataset
 def update_or_create_resource(dataset_id, mac_dir, file_path):
     # Construct the file URL based on the known GitHub structure
     base_url = "https://raw.githubusercontent.com/StadtBochum/OpenData/refs/heads/main"
@@ -182,11 +183,8 @@ def process_mac_directory(mac_dir):
     # Create or update the dataset in CKAN
     dataset_id = create_or_update_dataset(dataset_info)
 
-    # Update or create the resource (CSV file)
-    #update_or_create_resource_old(dataset_id, csv_file)
-
     # Link the resource (CSV file)
-    update_or_create_resource(dataset_id, csv_file)
+    update_or_create_resource(dataset_id, mac_dir, csv_file)
 
 # Function to scan and process all MAC directories
 def scan_and_process():
