@@ -57,8 +57,8 @@ def update_or_create_resource(dataset_id, file_path):
                     files={"upload": f}
                 )
             
-            if update_response.status_code not in (200, 201):
-                raise Exception(f"Failed to update resource: {update_response.text}")
+            #if update_response.status_code not in (200, 201):
+            #    raise Exception(f"Failed to update resource: {update_response.text}")
             print(f"Resource '{resource_id}' updated successfully.")
         else:
             print(f"No existing resource found for dataset '{dataset_id}'. Creating a new resource...")
@@ -82,8 +82,8 @@ def upload_file_resource(dataset_id, file_path):
             files={"upload": f}
         )
     
-    #if response.status_code not in (200, 201):
-    #    raise Exception(f"Failed to upload file resource: {response.text}")
+    if response.status_code not in (200, 201):
+        raise Exception(f"Failed to upload file resource: {response.text}")
     print(f"Resource '{filename}' uploaded successfully.")
 
 # Function to process each MAC folder
