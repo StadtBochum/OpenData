@@ -1,8 +1,8 @@
 name: ENVI EcoWitt List Daily
 
 on:
-  schedule:
-    #- cron: '0 2 * * *' # Runs daily
+  #schedule:
+  #  - cron: '0 2 * * *' # Runs daily
   workflow_dispatch:
 
 jobs:
