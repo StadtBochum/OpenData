@@ -1,8 +1,8 @@
 name: ENVI EcoWitt CKAN Daily
 
 on:
-  schedule:
-    - cron: '15 3 * * *' # Runs daily
+  #schedule:
+  #  - cron: '15 3 * * *' # Runs daily
   workflow_dispatch:
 
 jobs:
