@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-04-01 00:00:01,900356,Jahrhunderthalle,51.48298,7.19877,80.403,10.297,2.443,0.269,,3.608,10.89,50.8,2025-04
