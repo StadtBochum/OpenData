@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-05-01 00:00:01,900358,Hiltrop Volkspark,51.52259,7.26221,95.306,16.722,0,0,687,3.689,18.02,7.9,2025-05

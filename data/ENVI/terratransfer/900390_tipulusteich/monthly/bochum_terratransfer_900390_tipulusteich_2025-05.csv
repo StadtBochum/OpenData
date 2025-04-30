@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-05-01,900390,Tipulusteich,51.50074,7.21965,73.621,17.978,0.0,0.0,645,3.68,17.25,40.3,2025-05
