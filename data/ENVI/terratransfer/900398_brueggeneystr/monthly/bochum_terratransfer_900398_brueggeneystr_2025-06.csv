@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-06-01 00:00:01,900398,Brueggeneystr,51.41776,7.23148,84.317,13.491,123.03,11.521,,3.686,20.35,7.7,2025-06
