@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-07-01 00:00:01,900541,Uemminger See,51.46932,7.29004,1.432,22.6,12.007,1.008,2645,3.67,23.6,9.1,2025-07
