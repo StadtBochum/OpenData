@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-08-01,900415,Kuehlteich,51.48196,7.19709,75.65,19.95,100.95,9.055,,3.675,20.27,10.0,2025-08
