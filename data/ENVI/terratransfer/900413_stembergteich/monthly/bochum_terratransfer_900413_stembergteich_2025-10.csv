@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-10-01 00:00:01,900413,Stembergteich,51.51349,7.22748,78.897,13.006,99.272,10.461,,3.717,12.06,24.3,2025-10
