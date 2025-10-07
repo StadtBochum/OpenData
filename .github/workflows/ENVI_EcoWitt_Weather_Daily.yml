@@ -1,8 +1,8 @@
 name: ENVI EcoWitt Weather Daily
 
 on:
-  schedule:
-    - cron: '0 3 * * *' # Runs daily
+#  schedule:
+#    - cron: '0 3 * * *' # Runs daily
   workflow_dispatch:
 
 jobs:
