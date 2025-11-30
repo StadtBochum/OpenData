@@ -1,0 +1,2 @@
+datetime,logger_id,name,latitude,longitude,pegel,wtemp,o,do,elL,hkBat,hkTemp,hkHum,year_month
+2025-12-01,900374,Rottmansteich,51.50016,7.24634,105.033,5.466,0.0,0.0,1295,3.705,8.88,20.0,2025-12
