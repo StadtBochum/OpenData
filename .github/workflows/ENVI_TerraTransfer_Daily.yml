@@ -1,8 +1,8 @@
 name: ENVI Terratransfer Logger Daily
 
 on:
-  schedule:
-    - cron: '50 23 * * *'
+#  schedule:
+#    - cron: '50 23 * * *'
   workflow_dispatch:
 
 jobs:
